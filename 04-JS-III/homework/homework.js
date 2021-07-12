@@ -26,10 +26,11 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
+  var nuevoArray = [];
   for(var i = 0; i < array.length; i++); {
-  array[i] = array[i] + 1;
+  nuevoArray[i] = array[i] + 1;
   }
-    return array;
+    return nuevoArray;
 }
 
 
@@ -71,7 +72,7 @@ function arrayContiene(array, elemento) {
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
   for(var i = 0; i < array.length; i++); {
-  if(array[i] == elemento) {
+  if(array[i] === elemento) {
     return true;
 } 
   }
@@ -97,7 +98,6 @@ function promedioResultadosTest(resultadosTest) {
   var respuesta = agregarNumeros(resultadosTest);
   var promedio = respuesta / resultadosTest.length
     return promedio
-  
 }
 
 
@@ -151,13 +151,16 @@ function diaDeLaSemana(numeroDeDia) {
     return "Es dia Laboral"
   }
 } 
-
+ 
 
 function empiezaConNueve(n) {
   //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero 
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
-  
+  var aux = n.toString ();
+  if(aux [0] === "9")
+    return true;
+    return false;
 }
 
 
@@ -211,7 +214,16 @@ function breakStatement(numero) {
   //Si en algún momento el valor de la suma y la cantidad de iteraciones coinciden, debe interrumpirse la ejecución y 
   //devolver: "Se interrumpió la ejecución"
   //Pista: usá el statement 'break'
-  // Tu código:
+  // Tu código:{}
+  var respuesta = [];
+  for(var i = 0; i < 10; i++) {
+    numero = numero + 2;
+    if(i == numero) {
+      return "Se interrumpió la ejecución";
+    } else {
+      respuesta.push(numero);
+    }
+  }return respuesta;
 }
 
 
