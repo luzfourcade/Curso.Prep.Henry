@@ -131,7 +131,7 @@ function fizzBuzz(numero) {
   else if(numero%5 === 0) {
     return "buzz";
   } 
-    return Number;
+    return numero;
 }
 
 function operadoresLogicos(num1, num2, num3) {
@@ -148,13 +148,15 @@ function operadoresLogicos(num1, num2, num3) {
     return "Hay negativos";
   }
   if(num3 > num1 && num3 > num2) {
-    return numero3 + 1;
+    return num3 + 1;
+  }
+  
   else if(num1 === 0 || num2 === 0 || num3 === 0) {
     return "Error";
   }
-  else {
+  else 
     return false;
-  } 
+
 }
 
 function esPrimo(numero) {
@@ -163,11 +165,11 @@ function esPrimo(numero) {
   // Pista: un número primo solo es divisible por sí mismo y por 1
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
-  if(numero === 2);{
-    return true
+  if(numero === 2){
+    return true;
   }
-  if(numero < 2); {
-    return false
+  if(numero < 2) {
+    return false;
   }
   for(var i = 3; i < numero; i ++);
   if(numero%3 === 0);
